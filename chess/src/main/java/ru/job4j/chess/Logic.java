@@ -46,6 +46,5 @@ public final class Logic {
             }
         }
         throw new FigureNotFoundException("Figure not found on the board.");
-
     }
 }

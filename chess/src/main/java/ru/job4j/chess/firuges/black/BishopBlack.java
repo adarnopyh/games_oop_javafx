@@ -51,6 +51,5 @@ public class BishopBlack implements Figure {
     @Override
     public Figure copy(Cell dest) {
         return new BishopBlack(dest);
-
     }
 }
