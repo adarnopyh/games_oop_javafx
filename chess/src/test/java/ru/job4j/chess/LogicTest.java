@@ -13,8 +13,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class LogicTest {
-
-
     @Test
     public void whenMoveThenFigureNotFoundException()
             throws FigureNotFoundException, OccupiedCellException, ImpossibleMoveException {
@@ -50,4 +48,5 @@ public class LogicTest {
         });
         assertThat(exception.getMessage()).isEqualTo("Could not move by diagonal from %s to %s", bishopBlackSource.position(), Cell.G4);
     }
+
 }
