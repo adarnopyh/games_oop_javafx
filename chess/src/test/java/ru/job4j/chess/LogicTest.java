@@ -49,5 +49,4 @@ public class LogicTest {
                 bishopBlackSource.position(),
                 Cell.G4);
     }
-
 }

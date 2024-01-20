@@ -52,5 +52,4 @@ class BishopBlackTest {
         BishopBlack bishopBlackMove = new BishopBlack(Cell.C1);
         assertTrue(bishopBlackMove.isDiagonal(Cell.G5, Cell.D8));
     }
-
 }
