@@ -11,7 +11,6 @@ import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-
 public class LogicTest {
     @Test
     public void whenMoveThenFigureNotFoundException()
@@ -46,6 +45,9 @@ public class LogicTest {
         ImpossibleMoveException exception = assertThrows(ImpossibleMoveException.class, () -> {
             logic.move(Cell.C1, Cell.G4);
         });
-        assertThat(exception.getMessage()).isEqualTo("Could not move by diagonal from %s to %s", bishopBlackSource.position(), Cell.G4);
+        assertThat(exception.getMessage()).isEqualTo("Could not move by diagonal from %s to %s",
+                bishopBlackSource.position(),
+                Cell.G4);
     }
+
 }
